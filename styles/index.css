@@ -204,90 +204,64 @@
     color: #fff;
 }
 /* 호랑힐 인트로+주변관광지 래핑 */
-#intro_wrap {
-    padding: 0 350px;
+#wrap main #intro_wrap {
     background-color: #F5F5F5;
     display: flex;
     flex-flow: column nowrap;
 }
 /* 인트로 */
-#intro_wrap #intro_section {
-    width: 100%
+#wrap main #intro_wrap #intro_section {
 }
-#intro_wrap #intro_section {
-    margin: 70px 0;
-    width: 1220px ;
+#wrap main #intro_wrap #intro_section h1 {
 }
-#intro_wrap #intro_section h1 {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    font-weight:500;
+#wrap main #intro_wrap #intro_section p {
+
 }
-#intro_wrap #intro_section p {
-    margin-bottom: 30px;
-    line-height: 1.7;
-}
-#intro_wrap #intro_section a {}
-#intro_wrap #intro_section a img {
-    height:264px ;
-    width: 1220px;
+#wrap main #intro_wrap #intro_section a {}
+#wrap main #intro_wrap #intro_section a img {
+    width: 100%;
 }
 /* 주변관광지 */
-#attract_wrap {
-    display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-#attract_wrap #attract_section {
-    width: 1220px;
-    padding: 70px 0;
-}
-#attract_wrap #attract_section h1 {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    font-weight:500;
-
-}
-#attract_wrap #attract_section p {
-    margin-bottom: 30px;
-}
-#attract_wrap #attract_section .photos_wrap {
-    display: flex;
-    flex-flow: row nowrap;
-    margin-bottom: 80px;
-    gap: 20px;
-}
-#attract_wrap #attract_section .photos_wrap a > span {
-    font-size: 1.125rem;
-    font-weight: 500;
-    display: block;
-}
-#attract_wrap #attract_section .photos_wrap a {
-    overflow: hidden;
+#wrap main #attract_wrap {
+    margin: 0 0 70px;
     background-color: #6F6A9E;
 }
-#attract_wrap #attract_section .photos_wrap a:hover {
-    transform: scale(1.1);
+#wrap main #attract_wrap #attract_section {
+    background-color: aqua;
+}
+#wrap main #attract_wrap #attract_section h1 {
+}
+#wrap main #attract_wrap #attract_section p {
 
 }
-#attract_wrap #attract_section .photos_wrap a img {
-    width: 290px;
+#wrap main #attract_wrap #attract_section .photos_wrap {
+    display: inline-block
 }
-#attract_wrap #attract_section .photos_wrap a img {
-    margin-bottom: 10px;
-}
-#attract_wrap #attract_section .photos_wrap a:hover {
-    width: calc((100% - 60px) / 4);
-    overflow: hidden;
-}
-#attract_wrap #attract_section > a {
-    width: 1220px;
+#wrap main #attract_wrap #attract_section .photos_wrap .img_group {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+} 
+#wrap main #attract_wrap #attract_section .photos_wrap span {
+    display: block;
 }
-#attract_wrap #attract_section > a p {
-    text-decoration: underline;
+#wrap main #attract_wrap #attract_section .photos_wrap a {
+    background-color: antiquewhite;
+    display: ;
+    /* margin-bottom: 10px;
+    display: block; */
+}
+#wrap main #attract_wrap #attract_section .photos_wrap a:hover {
+
+}
+
+#wrap main #attract_wrap #attract_section .photos_wrap a img {
+    display: block;
+}
+
+#wrap main #attract_wrap #attract_section > a {
+    /* text-decoration: underline;  밑줄과 글자사이 여백이 불가 */
+    /* 
+    가운데
+    text-align 부모한테 명령 -> 자식, 자손 인라인 적용
+     */
+    /* fix the ailgnment problems that  */
 }

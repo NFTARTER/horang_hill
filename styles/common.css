@@ -61,3 +61,18 @@ body {}
 /* ================================================ footer */
 #wrap_footer {}
 #wrap_footer p {}
+/* ====================================================main w1220+p70 */
+#wrap main .container_layout,
+#wrap footer .container_layout {
+    width:1220px; margin: 0 auto; padding:70px 0;
+}
+/* main .공동클래스 {} */
+#wrap main .container_layout h1 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight:500;
+}
+#wrap main .container_layout h1+p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
