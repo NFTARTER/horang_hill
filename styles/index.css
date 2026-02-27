@@ -223,11 +223,11 @@
 }
 /* 주변관광지 */
 #wrap main #attract_wrap {
-    margin: 0 0 70px;
-    background-color: #6F6A9E;
+    margin: 0 auto 0px;
+    background-color: antiquewhite;
 }
 #wrap main #attract_wrap #attract_section {
-    background-color: aqua;
+    position: relative;
 }
 #wrap main #attract_wrap #attract_section h1 {
 }
@@ -235,22 +235,28 @@
 
 }
 #wrap main #attract_wrap #attract_section .photos_wrap {
-    display: inline-block
+    display: flex;
+    gap: 20px;
 }
 #wrap main #attract_wrap #attract_section .photos_wrap .img_group {
-    display: flex;
+    flex: 1;
+    text-align: left;
+    margin-bottom: 80px;
 } 
-#wrap main #attract_wrap #attract_section .photos_wrap span {
-    display: block;
+#wrap main #attract_wrap #attract_section .photos_wrap .img_group span {
+}
+#wrap main #attract_wrap #attract_section .photos_wrap a img {
+    width: 100%; height: auto;
+    transition: transform 0.3s ease;
 }
 #wrap main #attract_wrap #attract_section .photos_wrap a {
     background-color: antiquewhite;
-    display: ;
-    /* margin-bottom: 10px;
-    display: block; */
+    display: block;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
-#wrap main #attract_wrap #attract_section .photos_wrap a:hover {
-
+#wrap main #attract_wrap #attract_section .photos_wrap a img:hover {
+    transform: scale(1.2);
 }
 
 #wrap main #attract_wrap #attract_section .photos_wrap a img {
@@ -258,10 +264,100 @@
 }
 
 #wrap main #attract_wrap #attract_section > a {
-    /* text-decoration: underline;  밑줄과 글자사이 여백이 불가 */
-    /* 
-    가운데
-    text-align 부모한테 명령 -> 자식, 자손 인라인 적용
-     */
-    /* fix the ailgnment problems that  */
+    display: block;
+    width: max-content;
+    border-bottom: 1px solid black; /* 선 색상/두께 조절 */
+    padding-bottom: 4px; /* 글씨와 선 사이 간격 */
+    margin: 0 auto;
+}
+/* 객실 예약 안내----------------- */
+#wrap main #room_reserv {
+    background-color: #F5F5F5;
+}
+#wrap main #room_reserv .container_layout {
+    height: 781px;
+}
+#wrap main #room_reserv .container_layout h1 {}
+#wrap main #room_reserv .container_layout p {}
+#wrap main #room_reserv .container_layout .reserv_list {
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: calc((100% / 4 ) - 60);
+}
+#wrap main #room_reserv .container_layout .reserv_list li {
+    display: flex; flex-flow: column nowrap;
+    gap: 10px;
+}
+#wrap main #room_reserv .container_layout .reserv_list li:first-child img {
+    width: 500px;
+}
+#wrap main #room_reserv .container_layout .reserv_list li img {
+    width: 220px; overflow: hidden;
+}
+#wrap main #room_reserv .container_layout .reserv_list li em {
+    font-size: 1.13rem; font-weight: 500;
+}
+#wrap main #room_reserv .container_layout .reserv_list li p {
+    font-size: 0.88rem; font-weight: 400; line-height: 1.7;
+}
+#wrap main #room_reserv .link {
+    background-color: aqua;
+    padding-top: 80px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#wrap main #room_reserv .reserv_link {
+    display: block;
+    width: max-content;
+    border-bottom: 1px #000 solid;
+    background-color: #6F6A9E;
+}
+/* ------------------------------------오시는길 */
+#wrap main #map {
+    background-color: #fff;
+}
+#wrap main #map .container_layout {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 70px 0 0 ;
+}
+#wrap main #map .container_layout h1 {}
+#wrap main #map .container_layout p {}
+#wrap main #map #map_zone {
+    width: 1220px; margin:0 auto;
+}
+#wrap main #map #map_zone .map_link {}
+#wrap main #map #map_zone .map_link img {}
+#wrap main #map #map_zone .transport {
+    padding: 30px 0 70px 0;
+    line-height: 1.8;
+}
+#wrap main #map #map_zone .transport .bus,
+#wrap main #map #map_zone .transport .subway {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#wrap main #map #map_zone .transport .bus {}
+#wrap main #map #map_zone .transport .subway {
+}
+#wrap main #map #map_zone .transport dd {
+    font-size: 0.94rem;
+    line-height: 1.8;
+    margin-bottom: 2em;
+}
+#wrap footer {
+    display: flex;
+    background: black;
+    align-items: center;
+    height: 244px;
+}
+#wrap footer p{
+    color: #fff;
+    width: 1220px;
+    margin: 0 auto;
+    line-height: 2.0;
+    font-size: 0.81rem;
 }
